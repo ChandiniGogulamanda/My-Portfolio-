@@ -1,0 +1,231 @@
+.bgimg{
+  background-image: url(MyPortfolio_image.jpg);
+  background-repeat: no-repeat; 
+  background-size: 100%;
+  margin-bottom: 1px;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;  
+}
+
+.grid-container1{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: end;
+    column-gap: 80px;
+    color: black;
+    margin-right: 50px;
+    margin-bottom: 100px;
+}
+.grid-container1>a{
+  text-decoration: none;
+  color: black;
+}
+.container1{
+  margin-top: 200px;
+  margin-left: 600px;
+  margin-bottom: 300px;
+}
+
+.container1>h1{
+ color:brown;
+}
+.container1>p{
+  font-size: 30px;
+}
+button{
+  padding: 10px;
+  border: none;
+  background-color: rgb(152, 89, 89);
+  border-radius: 10px;
+  width: 200px;
+}
+button>a{
+  color: black;
+  text-decoration: none;
+}
+.grid-container2{
+  column-gap: 20px;
+}
+.bgimg1{
+      
+      background-image: url('Myportfolio_img2.jpeg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+.bgimg1::before {
+      
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(255, 255, 255, 0.3); /* Lightens the image */
+      z-index: 1;
+    }
+.container3 {
+      position: relative;
+      max-width: 800px;
+      padding: 20px;
+    }
+.bgimg h1 {
+      font-size: 3rem;
+      font-weight: 900; /* Super bold text */
+      color: #111;      /* Dark text stands out on lightened background */
+    }
+.bgimg p {
+      font-size: 25px;
+      font-weight: 600; /* Bold paragraph */
+      color: #111;
+    }
+.grid-container4{
+      display: grid;
+      grid-template-columns: auto auto;
+      column-gap: 40px;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+.theory{
+  text-align: center;
+  color: black;
+ 
+  font-weight: bold;
+  margin-left: 200px;
+  width: 900px;
+  text-shadow: #111;
+}
+.theory > h1{
+  color: rgb(103, 2, 2);
+  font-weight: bold;
+  margin-top: 70px;
+}
+.theory >p{
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+   font-size: 20px;
+}
+.grid-container3{
+  display: grid;
+  grid-template-rows: auto auto;
+  row-gap: 60px;
+}
+.skills{
+  text-align: left;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  background-color:rgb(152, 89, 89);
+  padding: 10px;
+  border-radius: 10px;
+}
+.skills > h2{
+  font-weight: bold;
+  
+}
+.education{
+  text-align: left;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  background-color: rgb(152, 89, 89);
+  padding: 10px;
+  border-radius: 10px;
+  height: 200px;
+}
+.education >h2{
+  font-weight: bold;
+}
+.grid-container5{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 100px;
+}
+.myservices{
+  background-color: rgb(152, 89, 89);
+  padding: 20px;
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+  height: 100px;
+}
+.myservices > h2{
+  font-weight: bold;
+}
+.grid-container6{
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 80px;
+}
+.grid-container7{
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+}
+.contact{
+    display: grid;
+    grid-template-columns: auto auto;
+    color: ghostwhite;
+    margin-left:200px ;
+    margin-top: 100px;
+    font-size: 20px;
+  }
+.grid-container7{
+    margin-top: 40px;
+    column-gap: 50px;
+}
+.grid-container7 > p> input, textarea{
+    padding: 10px;
+    border: none;
+    background-color: rgb(195, 131, 131);
+    border-radius: 5px;   
+}
+textarea input::placeholder{
+  color: rgb(174, 174, 180);
+}
+.container1 {
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+.skills {
+  transition: transform 0.3s ease;
+}
+
+.skills:hover {
+  transform: translateY(-20px);
+}
+.education {
+  transition: transform 0.3s ease;
+}
+
+.education:hover {
+  transform: translateY(-20px);
+}
+.myservices {
+  transition: transform 0.3s ease;
+}
+
+.myservices:hover {
+  transform: translateY(-20px);
+}
+footer{
+    color: ghostwhite;
+    background-color: rgb(67, 66, 66);
+    text-align: center;
+    padding: 10px;
+    font-size:20px;
+}
+
